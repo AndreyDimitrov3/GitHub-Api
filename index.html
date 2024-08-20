@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="GitHub.css">
+  <title>GitHub User Search</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <h1 class="heading">devfinder</h1>
+            <button class="toggle-button" id="toggleButton">Light<img src="assets/icon-sun.svg" alt="Sun" class="iconButton"></button>
+        </header>
+
+        <aside class="aside">
+            <img src="assets/icon-search.svg" alt="Search" class="search-img">
+            <input type="text" class="input" id="input" maxlength="39" placeholder="Search Github Username...">
+            <button class="search" id="search">Search</button>
+            <p class="noResults hidden" id="noResults">No Results</p>
+        </aside>
+
+        <section class="section">
+            <div class="avatar-holder">
+                <img src="" alt="Avatar" class="avatar" id="avatar">
+            </div>
+         
+            <div class="section-content">
+                <div class="section-header">
+                    <div class="header-header">
+                        <div>
+                            <h1 class="name" id="name"></h1>
+                            <p class="realName">@<span id="realName"></span></p>
+                        </div>
+                        <p class="date">Joined <span id="date"></span></p>
+                    </div>
+                    
+                </div>
+
+                <p class="bio" id="bio"></p>
+
+                <div class="section-data">
+                    <div>
+                        <p>Repos<div id="repos" class="dataNumber"></div></p>
+                    </div>
+                    <div>
+                        <p>Followers <div id="followers" class="dataNumber"></div></p>
+                    </div>
+                    <div>
+                        <p>Following<div id="following" class="dataNumber"></div></p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="assets-holder">
+                        <div class="assetsIndividual">
+                            <img src="assets/icon-location.svg" alt="Location" class="location-img">
+                            <span id="location" class="assetsText"></span>
+                        </div>
+                        <div class="assetsIndividual">
+                            <img src="assets/icon-twitter.svg" alt="Twitter" class="twitter">
+                            <span class="twitterWrapper wrapper">
+                                <a target="_blank" id="twitter" class="assetsText"></a>
+                            </span>
+                        </div>
+                    </div>
+    
+                    <div class="assets-holder">
+                        <div class="assetsIndividual">
+                            <img src="assets/icon-website.svg" alt="WebSite">
+                            <span class="websiteWrapper wrapper">
+                                <a target="_blank" id="website" class="assetsText"></a>
+                            </span>
+                        </div>
+                        <div class="assetsIndividual">
+                            <img src="assets/icon-company.svg" alt="Company">
+                            <span>
+                                <a target="_blank" id="company" class="assetsText"></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="GitHub.js"></script>
+</body>
+</html>
