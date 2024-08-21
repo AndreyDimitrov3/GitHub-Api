@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function(){
             document.getElementById('company').innerText = data.company || 'Not Available';
             if(data.company == null){
                 document.getElementById('company').style.color = 'rgb(143, 163, 193)';
-                document.getElementById('location').innerText = 'Not Available';
+                document.getElementById('company').innerText = 'Not Available';
             } else{
                 document.getElementById('company').style.color = 'var(--link-color)';
             }
